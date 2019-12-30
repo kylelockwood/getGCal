@@ -1,9 +1,6 @@
 #! python3
 # Gets calendar data from Google Calendar API and writes to a CSV file
 
-# Google Client ID: 866594703846-opvkbbe6hkfljjoptop5opem4pboehgg.apps.googleusercontent.com
-# Google Client Secret: XxfQz-cQAwx0e2ESUF1oaBSm
-
 from __future__ import print_function
 import datetime as dt
 import pickle
@@ -136,8 +133,6 @@ def sort_events(dMin, dMax, calList, service, calid, dateThreshold = format_isod
     # Sort the calendar data by date
     calEvents.sort()
     return calEvents
-
-
 
 
 def write_csv(fileName, dataList):
